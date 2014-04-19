@@ -10,3 +10,5 @@ The plan of attack is as follows:
 - configure the build to package the contents of the exploded WAR as its final artifact
 
 Once the artifact is packaged, it can merely be copied to the destination Glassfish's `autodeploy` directory. If the deployment is successful, the previously enabled version will be disabled and the new version will be enabled.
+
+This technique is tested to work with Glassfish 3.1.2 and Glassfish 4.0. Other versions may work as well.

@@ -142,4 +142,13 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<scm>
+		<url>https://github.com/enricopulatzo/glassfish-deployment-example</url>
+		<developerConnection>
+		scm:git:git@github.com:enricopulatzo/glassfish-deployment-example.git
+		</developerConnection>
+		<connection>
+		scm:git:git@github.com:enricopulatzo/glassfish-deployment-example.git
+		</connection>
+	</scm>
 </project>
