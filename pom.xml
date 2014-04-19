@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.joshpeters</groupId>
 	<artifactId>app</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<properties>
 		<version.slf4j>1.7.5</version.slf4j>
 	</properties>
