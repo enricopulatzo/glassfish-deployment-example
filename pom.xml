@@ -36,7 +36,7 @@
 					<execution>
 						<phase>generate-resources</phase>
 						<goals>
-							<goal>create</goal>
+							<goal>create-timestamp</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -101,7 +101,7 @@
 					<replacements>
 						<replacement>
 							<token>DEPLOY_VERSION</token>
-							<value>${buildNumber}</value>
+							<value>${timestamp}</value>
 						</replacement>
 					</replacements>
 				</configuration>
