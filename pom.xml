@@ -1,11 +1,8 @@
-<project
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.joshpeters</groupId>
 	<artifactId>app</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<properties>
 		<version.slf4j>1.7.5</version.slf4j>
 	</properties>
@@ -34,6 +31,7 @@
 				<version>1.0</version>
 				<executions>
 					<execution>
+						<id>ts</id>
 						<phase>generate-resources</phase>
 						<goals>
 							<goal>create-timestamp</goal>
@@ -101,7 +99,7 @@
 					<replacements>
 						<replacement>
 							<token>DEPLOY_VERSION</token>
-							<value>${timestamp}</value>
+							<value>${project.version}-${timestamp}</value>
 						</replacement>
 					</replacements>
 				</configuration>
@@ -155,5 +153,6 @@
 		<connection>
 		scm:git:git@github.com:enricopulatzo/glassfish-deployment-example.git
 		</connection>
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 </project>
